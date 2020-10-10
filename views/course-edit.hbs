@@ -1,0 +1,30 @@
+<h2>Edit the course: {{title}}</h2>
+ 
+<form action="/courses/{{_id}}/edit" method="post">
+ 
+  <label for="title-input">Title:</label>
+  <input type="text" name="title" id="title-input" value="{{title}}" />
+ 
+  <label for="instructor-input">Instructor:</label>
+  <input type="text" name="instructor" id="instructor-input" value="{{instructor}}" />
+  
+  <label for="day-input">Day:</label>
+  <input type="text"name="day"id="day-input"value="{{day}}"/>
+
+  <label for="time-input">Time:</label>
+  <input type="text"name="time"id="time-input"value="{{time}}"/>
+
+  <label for="startDate-input">StartDate:</label>
+  <input type="text"name="startDate"id="startDate-input"value="{{startDate}}"/>
+
+  <label for="duration-input">Duration:</label>
+  <input type="text"name="duration"id="duration-input"value="{{duration}}"/>
+
+  <label for="cost-input">Cost:</label>
+  <input type="text" name="cost"id="cost-input"value="{{cost}}"/>
+
+
+
+   <button type="submit">Save changes</button>
+ 
+</form>

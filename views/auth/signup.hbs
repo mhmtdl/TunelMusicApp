@@ -1,0 +1,29 @@
+{{! views/auth/signup.hbs }}
+<div class="inner-form form-container">
+  <div class="row">
+    <div class="col-lg-6 col-10 m-auto">
+
+<form action="/signup" method="POST">
+  <div class="form-group">
+    <label for="username">Username</label>
+      <input class="form-control" type="text" name="username" maxlength="12">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+     <input class="form-control" type="password" name="password" maxlength="20">
+  </div>
+
+  {{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+  {{/if}}
+
+  
+    <button class="btn btn-course btn-block mt-4" type="submit">Sign Up</button>
+  
+</form>
+  <p class="mt-2"><small>Do you already have an account? <a class="course-link" href="/login">Login</a> </small>
+    </p>
+</div>
+</div>
+</div>

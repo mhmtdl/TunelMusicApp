@@ -1,0 +1,41 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"><i style='font-size:20px' class='fas'>&#xf001;</i>    Tunel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item  ">
+        <a class="nav-link" href="/index/courses">Courses<span class="sr-only"></span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/">Log out<span class="sr-only"></span></a>
+      </li>
+      
+         
+    </ul>
+   
+  </div>
+</nav>
+
+<div class="container">
+  
+  <div class="row justify-content-around">
+     
+  {{#each courses}}
+
+<div class="card mt-5" style="width: 18rem;">
+  <img src="{{imageUrl}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+ <p class="card-text">{{introduction}}</p>
+    <a href="/courses/{{_id}}" class="btn btn-primary">Details</a>
+  </div>
+</div>
+   
+   {{/each}}
+</div>
+</div>
+

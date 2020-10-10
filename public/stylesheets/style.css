@@ -1,0 +1,40 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: gray; }
+
+.inner {
+  padding-top: 35vh; }
+
+.inner-form {
+  padding-top: 27.5vh; }
+
+#landing-section {
+  background: url("../images/september-2020-music-school.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+  color: white; }
+
+.form-container {
+  background: gray;
+  color: black;
+  height: 748px; }
+
+.form-container a {
+  color: #ffaaaa; }
+
+.btn-course {
+  background-color: black;
+  color: white; }
+
+#form {
+  text-align: center;
+  align-items: center;
+  width: 40rem;
+  margin: auto;
+  padding-top: 150px; }
+
+/*# sourceMappingURL=style.css.map */
