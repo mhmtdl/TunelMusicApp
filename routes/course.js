@@ -64,7 +64,7 @@ router.get('/courses/:id/delete',(req,res)=>{
   const {id} = req.params;
   Course.findByIdAndDelete({_id:id})
   .then(courses=>{
-    res.redirect('/private')
+    res.redirect('/index/private')
   })
   .catch(err=>console.log(err))
 })
